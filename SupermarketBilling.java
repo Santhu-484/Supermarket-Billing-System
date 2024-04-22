@@ -34,14 +34,14 @@ public class SupermarketBilling {
         System.out.print("Enter the tax rate(%): ");
         double taxRate = sc.nextDouble();
         tax = (taxRate * subTotal) / 100;
-        System.out.print("Enter the discount amount($): ");
+        System.out.print("Enter the discount amount(INR): ");
         discount = sc.nextDouble();
 
         finalTotal = subTotal + tax - discount;
-        System.out.println("Subtotal: $" + String.format("%.2f", subTotal));
-        System.out.println("Tax: $" + String.format("%.2f", tax));
-        System.out.println("Discount: $" + String.format("%.2f", discount));
-        System.out.println("Total: $" + String.format("%.2f", finalTotal));
+        System.out.println("Subtotal: INR " + String.format("%.2f", subTotal));
+        System.out.println("Tax: INR " + String.format("%.2f", tax));
+        System.out.println("Discount: INR " + String.format("%.2f", discount));
+        System.out.println("Total: INR " + String.format("%.2f", finalTotal));
     }
 }
 
@@ -60,7 +60,7 @@ class Item {
         return name;
     }
 
-    public int getQuantity() {
+    public int getquantity() {
         return quantity;
     }
 
